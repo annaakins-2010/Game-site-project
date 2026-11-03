@@ -1,0 +1,140 @@
+body {
+  background: #8c66ff;
+  color: #66ff94;
+  font-family: fantasy;
+  letter-spacing: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 10px solid #ff66d9;
+  font-family: cursive;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 30px;
+  font-weight: bold;
+}
+
+thead,
+tfoot{
+  background-color: #66dbff;
+}
+
+th,
+td{
+  border: 3px solid #668fff;
+}
+
+td:last-of-type{
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: #8a66ff;
+}
+
+tfoot td{
+  font-weight: bold;
+}
+#submitbutton {
+   border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #72F3BB;
+  text-shadow: 1px 1px 1px #72eaf3;
+  border-radius: 10px;
+  background-color: #72aaf3;
+  background-image: #e438ff(
+    to top left,
+    #72F3BB,
+    #72F3BB 30%,)
+    transparent
+}
+  .submitbutton:hover {
+      transform: scale(1.1)
+    }
+  ;
+  box-shadow{
+inset :(2px 2px 3px) rgb(255,161,173 ),
+    inset -2px -2px 3px rgb(253,165,213 );
+
+  }
+
+.styled:hover {
+  background-color: #66FFA8;
+
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px #FFC966,
+    inset 2px 2px 3px #E8FF66;
+}
+.box {
+  border: 5px solid #FFC966;
+  background-color: #E8FF66;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+}
+
+
+.grid {
+  margin: 1em auto;
+  padding: 1em;
+  gap: 1em;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 75px;
+  max-width: 80%;
+  border: solid;
+}
+
+.card { background-color: #9CFF66; }
+
+.bigger {
+  background-color: #668fff;
+  grid-row: 1 / span 2;
+  grid-column-end: -1;
+}
+/* default hover effect */
+a:hover {
+  color: #FF38B6;
+  background: #FF3853;
+}
+
+@media (hover: hover) {
+  /* when hover is supported */
+  a:hover {
+    color: #000;
+    background: #FF3853;
+  }
+}
+/* Target all links globally */
+a {
+  color: lavender;          /* Changes the link color */
+  text-decoration: none;   /* Removes the default underline */
+  font-weight: none;       /* Makes the text bold */
+}
+.grid-container {
+  /* 1. Turn on the grid system */
+  display: grid;
+
+  /* 2. Define 3 columns of equal width using fractional units (fr) */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* 3. Add space (gutters) between your grid items */
+  gap: 20px;
+}
